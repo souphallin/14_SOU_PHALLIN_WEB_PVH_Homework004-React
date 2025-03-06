@@ -6,8 +6,14 @@ import LearningMaterialsComponent from './components/LearningMaterialsComponent'
 import AssignmentsComponent from './components/AssignmentsComponent'
 import CardComponent from './components/CardComponent'
 import AddNewProjectComponent from './components/AddNewProjectComponent'
+import React, { useState } from "react";
+
 
 function App() {
+  // const [projects, setProjects] = useState([]);
+  // const handleAddProject = (newProject) => {
+  //   setProjects([...projects, newProject])
+  // }
   return (
     <>
       <div className="grid grid-cols-10">
@@ -22,7 +28,7 @@ function App() {
               <DashboardComponent/>
               <div className="pt-5 px-10 flex justify-between">
                 <AssignmentsComponent/>
-                <AddNewProjectComponent/>
+                {/* <AddNewProjectComponent onAddProject={handleAddProject}/> */}
               </div>
             </div>
             <div className="col-span-2">

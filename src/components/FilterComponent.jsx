@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { learningMaterials } from '../data/learningMaterials';
 
 export default function FilterComponent({handleSortMaterials}) {
-  const [isAscending, setIsAscending] = useState(true); // Initial sorting state
+  // const [isAscending, setIsAscending] = useState(true); // Initial sorting state
   const [sortedMaterials, setSortedMaterials] = useState(learningMaterials);
 
   // Prevent the page from reloading on form submit
